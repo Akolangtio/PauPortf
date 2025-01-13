@@ -1,0 +1,143 @@
+.languages {
+    background: linear-gradient(to bottom, #000, #333);
+    padding: 80px 20px;
+    text-align: center;
+    color: #ffcf00;
+    position: relative;
+    font-family: 'Calibri Light', sans-serif;
+}
+
+.languages h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #ffcf00;
+    position: relative;
+    animation: fadeInDown 1s ease;
+}
+
+.languages h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 3px;
+    background: #ffcf00;
+}
+
+.language-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.language-box {
+    background: #1a1a1a;
+    border: 2px solid #ffcf00;
+    border-radius: 15px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s ease, box-shadow 0.5s ease, background-color 0.3s;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.language-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+    background-color: #000;
+}
+
+.language-logo {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.language-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.language-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #ffcf00;
+    transition: color 0.3s;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.7);
+}
+
+.language-box:hover h3 {
+    color: #fff;
+}
+
+.language-box p {
+    font-size: 1rem;
+    color: #ffcf00;
+    line-height: 1.6;
+    text-align: center;
+    transition: color 0.3s;
+    padding: 0 10px;
+}
+
+.language-box:hover p {
+    color: #fff;
+}
+
+.language-animation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.language-box.active .language-animation {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+    .language-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .language-box {
+        width: 90%;
+        margin-bottom: 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .languages h2 {
+        font-size: 2.5rem;
+    }
+
+    .language-box {
+        padding: 15px;
+    }
+
+    .language-box h3 {
+        font-size: 1.5rem;
+    }
+
+    .language-box p {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio - Home</title>
+	<link rel="stylesheet" href="assets/css/styles.css">
+	<link rel="stylesheet" href="assets/css/languages.css">
+	<link rel="stylesheet" href="assets/css/projects.css">
+	<link rel="stylesheet" href="assets/css/works.css">
+	<link rel="stylesheet" href="assets/css/contact.css">
+	<link rel="stylesheet" href="assets/css/footer.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+
+
+	<script defer src="assets/js/scripts.js"></script>
+</head>
+
+<body>
+	<header>
+		<div class="logo">PR</div>
+		<nav>
+			<button class="menu-toggle" onclick="toggleMenu()">☰</button>
+			<ul class="nav-links">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#languages">SKILLS</a></li>
+				<li><a href="#projects">Projects</a></li>
+				<li><a href="#works">Education</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<section id="home" class="hero">
+		<h1>Paulo Ramos</h1>
+		<p>Aspiring Developer</p>
+		<a href="#languages" class="btn">SCROLL DOWN TO SEE MORE</a>
+
+		
+	</section>
+
+
+<section id="languages" class="languages">
+    <h2>Skills</h2>
+    <div class="language-container">
+        <div class="language-box" onclick="showAnimation(this)">
+            <div class="language-logo">
+                <img src="assets/images/java.png" alt="Java Logo">
+            </div>
+            <h3>Java</h3>
+            <p>Comprehensive experience in object-oriented programming and enterprise-level applications.</p>
+            <canvas class="language-animation"></canvas>
+        </div>
+        <div class="language-box" onclick="showAnimation(this)">
+            <div class="language-logo">
+                <img src="assets/images/html-5.png" alt="HTML Logo">
+            </div>
+            <h3>HTML</h3>
+            <p>Expert in crafting semantic and accessible web structures for modern web applications.</p>
+            <canvas class="language-animation"></canvas>
+        </div>
+        <div class="language-box" onclick="showAnimation(this)">
+            <div class="language-logo">
+                <img src="assets/images/css-3.png" alt="CSS Logo">
+            </div>
+            <h3>CSS</h3>
+            <p>Specialized in responsive designs and creating visually appealing user interfaces.</p>
+            <canvas class="language-animation"></canvas>
+        </div>
+        <div class="language-box" onclick="showAnimation(this)">
+            <div class="language-logo">
+                <img src="assets/images/js.png" alt="JavaScript Logo">
+            </div>
+            <h3>JavaScript</h3>
+            <p>Proficient in dynamic web development using modern frameworks and libraries.</p>
+            <canvas class="language-animation"></canvas>
+        </div>
+        <div class="language-box" onclick="showAnimation(this)">
+            <div class="language-logo">
+                <img src="assets/images/c-sharp.png" alt="C# Logo">
+            </div>
+            <h3>C#</h3>
+            <p>Strong knowledge of developing robust applications and game development with Unity.</p>
+            <canvas class="language-animation"></canvas>
+        </div>
+    </div>
+</section>
+
+
+<section id="projects" class="projects">
+	<div class="projects-description">
+		<h2>My Projects</h2>
+		<p>Below are some of the projects I've worked on. They demonstrate my basic skills in software development and Java
+			frameworks.</p>
+	</div>
+
+	<div class="projects-gallery">
+		<!-- Project 1 -->
+		<div class="project-item" onclick="showProjectDetails(this)">
+			<img src="assets/images/INM_AUDIO-1.png" alt="INM_AUDIO" />
+			<div class="project-content">
+				<h3>INM_AUDIO</h3>
+				<p>Click to view details.</p>
+			</div>
+			<div class="project-details hidden">
+				<h3>INM_AUDIO</h3>
+				<p>3D Earphone customization using React Three Fiber  </p>
+				<div class="project-images">
+					<img src="assets/images/INM_AUDIO-1.png" alt="Screenshot 1" />
+					<img src="assets/images/INM_AUDIO-2.png" alt="Screenshot 2" />
+					<img src="assets/images/INM_AUDIO-3.png" alt="Screenshot 3" />
+					<img src="assets/images/INM_AUDIO-4.png" alt="Screenshot 4" />
+					<img src="assets/images/INM_AUDIO-5.png" alt="Screenshot 5" />
+					<img src="assets/images/INM_AUDIO-6.png" alt="Screenshot 6" />
+
+				</div>
+				<a href="#" target="_blank" class="btn">View on GitHub</a>
+			</div>
+		</div>
+
+		<!-- Additional projects remain unchanged -->
+		<div class="project-item" onclick="showProjectDetails(this)">
+			<img src="assets/images/java.png" alt="INM_AUDIO" />
+			<div class="project-content">
+				<h3>Login System</h3>
+				<p>Click to view details.</p>
+			</div>
+			<div class="project-details hidden">
+				<h3>Login System</h3>
+				<p>Basic login system using javaFX </p>
+				<div class="project-images">
+					<img src="assets/images/javafx_login_form_.png" alt="Screenshot 1" />
+					<img src="assets/images/welcome_.png" alt="Screenshot 2" />
+					
+
+				</div>
+				<a href="#" target="_blank" class="btn">View on GitHub</a>
+			</div>
+	</div>
+</section>
+
+
+
+<section id="works" class="works">
+	<h2>Educational Background</h2>
+	<div class="work-container">
+		<!-- Work 1 -->
+		<div class="work-box" onclick="toggleDetails('work1')">
+			<h3>Elementary</h3>
+			<span>2008 - 2015</span>
+			<p class="work-description">Click to view more</p>
+			<div id="work1" class="work-details">
+				<div class="work-info">
+					<p><strong>Location:</strong> Paniqui, Tarlac</p>
+					<p><strong>Email:</strong> example@.com</p>
+					
+				</div>
+				<div class="skills">
+					<span class="skill">J</span>
+					<span class="skill">S</span>
+					<span class="skill">C</span>
+				</div>
+				<img class="company-logo" src="assets/images/logo" alt=" Logo">
+			</div>
+		</div>
+
+		<!-- Work 2 -->
+		<div class="work-box" onclick="toggleDetails('work2')">
+			<h3>High School</h3>
+			<span>2015 - 2019</span>
+			<p class="work-description">Click to view more</p>
+			<div id="work2" class="work-details">
+				<div class="work-info">
+					<p><strong>Location:</strong> Paniqui, Tarlac</p>
+					<p><strong>Email:</strong> example@abc.com</p>
+					
+				</div>
+				<div class="skills">
+					<span class="skill">R</span>
+					<span class="skill">C</span>
+					<span class="skill">J</span>
+				</div>
+				<img class="company-logo" src="assets/images/logo" alt=" Logo">
+			</div>
+		</div>
+
+		<!-- Work 3 -->
+		<div class="work-box" onclick="toggleDetails('work3')">
+			<h3>Senior High School</h3>
+			<span>2021 - 2023</span>
+			<p class="work-description">Click to learn more</p>
+			<div id="work3" class="work-details">
+				<div class="work-info">
+					<p><strong>Location:</strong> Austin, TX</p>
+					<p><strong>Email:</strong> example@xyz.com</p>
+					
+				</div>
+				<div class="skills">
+					<span class="skill">N</span>
+					<span class="skill">M</span>
+					<span class="skill">E</span>
+				</div>
+				<img class="company-logo" src="assets/images/" alt=" Logo">
+			</div>
+		</div>
+
+		<!-- Work 4 -->
+		<div class="work-box" onclick="toggleDetails('work4')">
+			<h3>College</h3>
+			<span>2020 - 2021</span>
+			<p class="work-description">Click to view more</p>
+			<div id="work4" class="work-details">
+				<div class="work-info">
+					<p><strong>Location:</strong> Tanza, Cavite</p>
+					<p><strong>Email:</strong> example@lmn.com</p>
+				</div>
+				<div class="skills">
+					<span class="skill">P</span>
+					<span class="skill">S</span>
+					<span class="skill">IT</span>
+				</div>
+				<img class="company-logo" src="assets/images/" alt=" Logo">
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+		
+
+
+<section id="contact" class="contact">
+	<div class="contact-info">
+		<h2>Get in Touch</h2>
+		<p class="intro">I'm always open to connecting. Feel free to contact me anywhere, anytime. Just call my name and
+			I'll be there.</p>
+		<div class="social-links">
+			<a href="https://www.facebook.com/yourprofile" target="_blank" class="social-link">
+				<i class="fab fa-messenger"></i> Messenger
+			</a>
+			<a href="https://www.linkedin.com/in/yourprofile" target="_blank" class="social-link">
+				<i class="fab fa-linkedin"></i> LinkedIn
+			</a>
+			<a href="https://github.com/yourprofile" target="_blank" class="social-link">
+				<i class="fab fa-github"></i> GitHub
+			</a>
+			<a href="mailto:johnpaulo.ramos@cvsu.edu.ph" class="social-link">
+				<i class="fas fa-envelope"></i> Gmail
+			</a>
+		</div>
+	</div>
+	<div class="profile-photo">
+		<img src="assets/images/profile.jpg" alt="Profile Picture">
+	</div>
+</section>
+
+
+
+
+	<section id="footer">
+		<footer class="footer">
+			<p>&copy; 2025 Paulo Ramos</p>
+		</footer>
+</body>
+
+</html>
